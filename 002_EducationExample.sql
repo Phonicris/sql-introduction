@@ -6,8 +6,8 @@ VALUES('Roger', 'Barsk', '1990-11-21');
 INSERT INTO School(school_name, school_address)
 VALUES('Tjuvehytta', 'Oppi vegen');
 
-INSERT INTO Classes(class_name, class_description)
-VALUES('Tjuveri', 'Tjuving for tjuver i tjuvehytta');
+INSERT INTO Classes(class_id, class_name, class_description)
+VALUES('TJUV 1001', 'Tjuveri', 'Tjuving for tjuver i tjuvehytta');
 
 INSERT INTO Grades(grade)
 VALUES('A'), ('B'), ('C'), ('D'), ('E'), ('F');
