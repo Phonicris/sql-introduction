@@ -11,7 +11,7 @@
     CREATE TABLE Wares(
         id INT IDENTITY(1,1) PRIMARY KEY,
         name VARCHAR(30),
-        price DECIMAL(8,2)
+        price DECIMAL(8,2),
         AmountInStock INT,
         dateAdded DATETIME DEFAULT CURRENT_TIMESTAMP,
         productInformation VARCHAR(255),
