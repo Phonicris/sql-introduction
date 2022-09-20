@@ -25,11 +25,12 @@ CREATE TABLE Grades(
 );
 
 CREATE TABLE Enrollment(
-    enrollment_id
-    enrollment_start_date DATE DEFAULT CURRENT_DATE,
+    enrollment_id INT IDENTITY(1,1) PRIMARY KEY,
+    enrollment_start_date DATE DEFAULT CURRENT_TIMESTAMP,
     enrollment_end_date DATE,
-    enrollment_grade CHAR(1) REFERENCES Grades,
-    class_id VARCHAR(10) REFERENCES SchoolCourse,
-    student_id INT REFERENCES Student(id),
+    enrollment_grade CHAR(1) REFERENCES Grades(grade),
+    class_id VARCHAR(10) REFERENCES Classes(class_id),
+    student_id INT REFERENCES Student(student_id),
 );
+
 
