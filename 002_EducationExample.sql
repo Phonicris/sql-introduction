@@ -1,7 +1,7 @@
 USE Education;
 
 INSERT INTO Student(student_first_name, student_last_name, student_birthdate)
-VALUES('Roger', 'Barsk', '1990-11-21');
+VALUES('Roger', 'Raring', '1990-11-21');
 
 INSERT INTO School(school_name, school_address)
 VALUES('Tjuvehytta', 'Oppi vegen');
